@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="#424141"
+    tools:context=".fragments.BrowseImageFragment">
+
+    <!-- <androidx.cardview.widget.CardView
+         android:id="@+id/tob_bar"
+         android:layout_width="match_parent"
+         android:layout_height="?attr/actionBarSize"
+         android:layout_gravity="top"
+         app:cardBackgroundColor="@android:color/transparent"
+         android:visibility="visible">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             >
+             <androidx.cardview.widget.CardView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@android:color/transparent"
+                 android:tint="#FFF"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentEnd="true"
+                 android:layout_marginEnd="10dp"
+                 android:src = "@drawable/ic_menu_black"
+                 />
+         </RelativeLayout>
+     </androidx.cardview.widget.CardView>-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tob_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top"
+        android:visibility="gone"
+        app:cardBackgroundColor="@android:color/transparent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/imagePager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+    <!--<androidx.cardview.widget.CardView
+        android:id="@+id/b_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        app:cardBackgroundColor="@android:color/transparent"
+        android:visibility="visible">
+        &lt;!&ndash;   <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           >
+
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@android:color/transparent"
+               android:tint="#FFF"
+               android:layout_centerVertical="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginEnd="10dp"
+               android:src = "@drawable/ic_menu_black"
+               />
+       </RelativeLayout>&ndash;&gt;
+    </androidx.cardview.widget.CardView>-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        app:itemIconTint="#fff"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/image_actions" />
+
+
+</FrameLayout>
